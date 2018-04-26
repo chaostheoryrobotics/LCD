@@ -1,0 +1,47 @@
+//void displayAuton(){
+//	switch(auton){
+//	case 1:
+//		displayLCDCenteredString(0, "Auto1");
+
+//		break;
+//	case -1:
+//		displayLCDCenteredString(0, "Auto2");
+
+//		break;
+//	case 0:
+//		displayLCDCenteredString(0, "Auto3");
+
+//		break;
+//	default:
+//		displayLCDCenteredString(0, "No auton");
+
+//		break;
+//	}
+//}
+
+//task LCDControl()
+//{
+//	clearLCDLine(0);
+//	clearLCDLine(1);
+//	bool noButtonsPressed = true;
+//	displayAuton();
+//	while(true){
+//		if(noButtonsPressed){ // only update auton if a button is pressed AND wasn't pressed previously
+//			switch(nLCDButtons){
+//			case kButtonLeft:
+//				auton--;
+//				displayAuton();
+//				break;
+//			case kButtonCenter:
+//				stopTask(LCDControl);
+//				break;
+//			case kButtonRight:
+//				auton++;
+//				displayAuton();
+//				break;
+//			}
+//		}
+//		noButtonsPressed = !nLCDButtons; //update if there is a button currently pressed
+//		wait1Msec(20);
+//	}
+//}
